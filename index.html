@@ -3,50 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EndVision AI - Productivity and Goal Management</title>
+    <title>EndVision - AI-Powered Goal Achievement System</title>
     <style>
-        /* Basic responsive styling */
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1200px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; margin-bottom: 40px; }
-        .app-icon { width: 120px; height: 120px; }
-        .feature { margin-bottom: 30px; }
-        .screenshots { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0; }
-        .screenshot { max-width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .cta-buttons { display: flex; justify-content: center; gap: 20px; margin: 40px 0; }
-        .cta-button { display: inline-block; padding: 12px 24px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
-        footer { text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9em; }
-        @media (max-width: 768px) { .cta-buttons { flex-direction: column; align-items: center; } }
+        :root {
+            --primary: #00e68a;
+            --secondary: #6699ff;
+            --accent: #ff9933;
+            --dark: #222233;
+            --light: #ffffff;
+            --purple: #d926ff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 8px;
+            padding: 30px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            margin-top: 30px;
+            color: var(--dark);
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, rgba(0, 230, 138, 0.2), rgba(102, 153, 255, 0.2));
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .feature-card:nth-child(2n) {
+            border-top-color: var(--secondary);
+        }
+        
+        .feature-card:nth-child(3n) {
+            border-top-color: var(--accent);
+        }
+        
+        .feature-card:nth-child(4n) {
+            border-top-color: var(--purple);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        
+        .emoji-icon {
+            font-size: 1.4em;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+        
+        .badges-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .screenshot {
+            width: 100%;
+            border-radius: 6px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .button:hover {
+            opacity: 0.9;
+        }
+        
+        .cta-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+        }
+        
+        .book-inspiration {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--accent);
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .benefits-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .benefits-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <img src="app-icon.png" alt="EndVision AI Logo" class="app-icon">
-        <h1>EndVision AI</h1>
-        <p>Transform your goals into achievable steps</p>
-    </header>
-    
-    <section class="features">
-        <div class="feature">
-            <h2>AI-Powered Goal Management</h2>
-            <p>EndVision AI uses advanced artificial intelligence to break down your long-term goals into manageable tasks and habits.</p>
+    <div class="container">
+        <div class="header">
+            <h1>EndVision</h1>
+            <p>AI-powered goal system that transforms visions into actionable, trackable plans</p>
         </div>
-        <!-- Add more features -->
-    </section>
-    
-    <div class="screenshots">
-        <!-- Add screenshots here -->
-        <img src="screenshot1.png" alt="Goal Dashboard" class="screenshot">
+        
+        <div class="badges-container">
+            <span class="badge">React Native</span>
+            <span class="badge">AI-Powered</span>
+            <span class="badge">Productivity</span>
+            <span class="badge">Goal Tracking</span>
+            <span class="badge">Habit Building</span>
+        </div>
+        
+        <div class="highlight">
+            <p><strong>EndVision is more than just another productivity app.</strong> It's a comprehensive system inspired by principles from the world's most influential productivity books—bringing together proven methodologies in a powerful, AI-enhanced package that helps you transform your ambitious goals into achievable reality.</p>
+        </div>
+        
+        <h2>🚀 Overview</h2>
+        <p>EndVision leverages artificial intelligence to turn your abstract goals into structured pathways with clear steps and milestones. By combining intelligent goal breakdown, habit formation principles, time tracking, and comprehensive analytics, EndVision creates a complete ecosystem for personal and professional achievement.</p>
+        
+        <p>Whether you're pursuing career advancement, launching a project, developing a skill, or implementing personal improvements, EndVision provides the structure, insights, and tools to make consistent progress toward your vision.</p>
+        
+        <div class="book-inspiration">
+            <h3>📚 Inspired by Productivity Classics</h3>
+            <p>EndVision synthesizes principles from productivity giants including:</p>
+            <ul>
+                <li><strong>Getting Things Done</strong> - For task management and mental clarity</li>
+                <li><strong>Atomic Habits</strong> - For incremental improvement and habit building</li>
+                <li><strong>Deep Work</strong> - For focused productivity and time management</li>
+                <li><strong>The 7 Habits of Highly Effective People</strong> - For principle-centered achievement</li>
+                <li><strong>Essentialism</strong> - For focusing on what truly matters</li>
+                <li><strong>Flow</strong> - For optimal experience and engagement</li>
+                <li><strong>The Art of Focus</strong> - For sustained attention and priority management</li>
+            </ul>
+        </div>
+        
+        <!-- Replace with actual screenshot when available -->
+        <!-- <img src="screenshots/endvision-dashboard.png" alt="EndVision Dashboard" class="screenshot"> -->
+        
+        <h2>✨ Key Features</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3><span class="emoji-icon">🤖</span>AI Goal Breakdown</h3>
+                <p>Simply describe your vision, and the AI engine will generate a complete goal structure with hierarchical nodes, habits, and actions to take you from concept to completion.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="emoji-icon">🌳</span>Strategic Node System</h3>
+                <p>Complex goals are broken into tiered nodes with clear dependencies, ensuring you always know exactly what to work on next in your progression.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="emoji-icon">⚙️</span>Dual Task Framework</h3>
+                <p>Build lasting change through complementary habits (recurring behaviors) and actions (one-time tasks), both fully integrated with tracking and analytics.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="emoji-icon">🔍</span>Intelligent Task Selection</h3>
+                <p>Find exactly what to work on with multi-dimensional filtering by time available, energy level, priority, and active goal nodes.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="emoji-icon">📅</span>Interactive Day Planner</h3>
+                <p>Design your ideal day with time-blocked habits and actions, then access them instantly when that time arrives with one-tap filtering.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="emoji-icon">⏱️</span>Comprehensive Time Tracking</h3>
+                <p>Monitor time invested in goals, habits, and actions with simple controls and reusable templates for recurring activities.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="emoji-icon">📊</span>Data-Driven Insights</h3>
+                <p>Transform activity data into actionable intelligence with analytics on goal allocation, priority alignment, habit streaks, and detailed time records.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><span class="emoji-icon">📈</span>Visual Progress Tracking</h3>
+                <p>Stay motivated with dynamic progress bars, completion percentages, streak tracking, and color-coded priority indicators.</p>
+            </div>
+        </div>
+        
+        <h2>🎯 Benefits</h2>
+        <ul class="benefits-list">
+            <li><strong>Eliminate Decision Fatigue</strong>: Always know exactly what to focus on next based on your priorities, available time, and energy levels.</li>
+            <li><strong>Build Consistent Habits</strong>: Track streaks and maintain momentum with visual feedback and progression metrics.</li>
+            <li><strong>Optimize Your Time</strong>: See precisely where your hours are going and make data-driven adjustments to your focus areas.</li>
+            <li><strong>Maintain Strategic Focus</strong>: Work on the right things at the right time with clear visibility into goal dependencies.</li>
+            <li><strong>Transform Big Visions</strong>: Break overwhelming goals into achievable steps with AI-powered goal structuring.</li>
+            <li><strong>Adapt to Daily Context</strong>: Match tasks to your available time and energy with intelligent filtering.</li>
+            <li><strong>Data-Driven Improvement</strong>: Use real insights to continuously refine your approach and productivity system.</li>
+        </ul>
+        
+        <h2>🛠️ Installation</h2>
+        <p>EndVision is available for download on iOS and Android platforms:</p>
+        
+        <div class="cta-container">
+            <a href="#" class="button">App Store</a>
+            <a href="#" class="button">Google Play</a>
+        </div>
+        
+        <h2>💻 Technology</h2>
+        <p>EndVision is built with React Native, providing a smooth, native experience across both iOS and Android platforms. The backend leverages AI technology to transform goal descriptions into structured action plans that incorporate proven productivity methodologies.</p>
+        
+        <h2>🤝 Contributing</h2>
+        <p>We welcome feedback, feature requests, and bug reports to make EndVision even better. Please submit issues through our GitHub repository or contact us directly through the app's feedback mechanism.</p>
+        
+        <h2>📄 License</h2>
+        <p>EndVision is proprietary software. All rights reserved.</p>
+        
+        <div class="cta-container">
+            <a href="#" class="button">Download Now</a>
+            <a href="#" class="button">Learn More</a>
+        </div>
+        
+        <footer>
+            <p>© 2025 EndVision. All rights reserved.</p>
+            <p>Transform your vision into reality.</p>
+        </footer>
     </div>
-    
-    <div class="cta-buttons">
-        <a href="https://apps.apple.com/app/your-app-id" class="cta-button">Download on the App Store</a>
-        <a href="https://play.google.com/store/apps/details?id=your.package.name" class="cta-button">Get it on Google Play</a>
-    </div>
-    
-    <footer>
-        <p>© 2025 EndVision AI. All rights reserved.</p>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-        <p>Contact: <a href="mailto:your-support-email@example.com">your-support-email@example.com</a></p>
-    </footer>
 </body>
 </html>
