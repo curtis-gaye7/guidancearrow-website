@@ -1,6 +1,7 @@
 # EndVision
 
 [Visit the EndVision AI website](https://curtis-gaye7.github.io/endvision-ai-website/index.html)
+
 [Support and FAQ](https://curtis-gaye7.github.io/endvision-ai-website/support.html)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
