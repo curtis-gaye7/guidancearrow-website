@@ -17,18 +17,6 @@ EndVision is a comprehensive productivity application that leverages artificial 
 
 Whether you're pursuing career advancement, launching a project, developing a skill, or implementing personal improvements, EndVision provides the structure, insights, and tools to make consistent progress toward your vision.
 
-## 📚 Inspired by Productivity Classics
-
-EndVision synthesizes principles from productivity giants including:
-
-- **Getting Things Done** - For task management and mental clarity
-- **Atomic Habits** - For incremental improvement and habit building
-- **Deep Work** - For focused productivity and time management
-- **The 7 Habits of Highly Effective People** - For principle-centered achievement
-- **Essentialism** - For focusing on what truly matters
-- **Flow** - For optimal experience and engagement
-- **The Art of Focus** - For sustained attention and priority management
-
 ## ✨ Key Features
 
 ### 🤖 AI Goal Breakdown
@@ -91,6 +79,18 @@ EndVision is available for download on iOS and Android platforms:
 
 - [App Store](#) *(Coming Soon)*
 - [Google Play](#) *(Coming Soon)*
+
+## 📚 Inspired by Productivity Classics
+
+EndVision synthesizes principles from productivity giants including:
+
+- **Getting Things Done** - For task management and mental clarity
+- **Atomic Habits** - For incremental improvement and habit building
+- **Deep Work** - For focused productivity and time management
+- **The 7 Habits of Highly Effective People** - For principle-centered achievement
+- **Essentialism** - For focusing on what truly matters
+- **Flow** - For optimal experience and engagement
+- **The Art of Focus** - For sustained attention and priority management
 
 ## 💻 Technology
 
