@@ -1,6 +1,6 @@
 # FocusVector
 
-[Visit the FocusVector AI website](https://curtis-gaye7.github.io/focusvector-ai-website/index.html)
+[Visit the FocusVector AI website](https://curtis-gaye7.github.io/focusvector-website/index.html)
 
 [Support and FAQ](https://curtis-gaye7.github.io/focusvector-website/support.html)
 
