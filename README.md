@@ -1,8 +1,8 @@
-# EndVision
+# FocusVector
 
-[Visit the EndVision AI website](https://curtis-gaye7.github.io/endvision-ai-website/index.html)
+[Visit the FocusVector AI website](https://curtis-gaye7.github.io/focusvector-ai-website/index.html)
 
-[Support and FAQ](https://curtis-gaye7.github.io/endvision-ai-website/support.html)
+[Support and FAQ](https://curtis-gaye7.github.io/focusvector-ai-website/support.html)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android-lightgrey.svg)
@@ -13,9 +13,9 @@
 
 ## Overview
 
-EndVision is a comprehensive productivity application that leverages artificial intelligence to transform abstract goals into structured, actionable pathways. By combining intelligent goal breakdown, habit formation principles, time tracking, and detailed analytics, EndVision creates a complete ecosystem for personal and professional achievement.
+FocusVector is a comprehensive productivity application that leverages artificial intelligence to transform abstract goals into structured, actionable pathways. By combining intelligent goal breakdown, habit formation principles, time tracking, and detailed analytics, FocusVector creates a complete ecosystem for personal and professional achievement.
 
-Whether you're pursuing career advancement, launching a project, developing a skill, or implementing personal improvements, EndVision provides the structure, insights, and tools to make consistent progress toward your vision.
+Whether you're pursuing career advancement, launching a project, developing a skill, or implementing personal improvements, FocusVector provides the structure, insights, and tools to make consistent progress toward your vision.
 
 ## ✨ Key Features
 
@@ -75,14 +75,14 @@ Design your ideal day and access time-specific tasks with a single tap.
 
 ## 🛠️ Installation
 
-EndVision is available for download on iOS and Android platforms:
+FocusVector is available for download on iOS and Android platforms:
 
 - [App Store](#) *(Coming Soon)*
 - [Google Play](#) *(Coming Soon)*
 
 ## 📚 Inspired by Productivity Classics
 
-EndVision synthesizes principles from productivity giants including:
+FocusVector synthesizes principles from productivity giants including:
 
 - **Getting Things Done** - For task management and mental clarity
 - **Atomic Habits** - For incremental improvement and habit building
@@ -94,18 +94,18 @@ EndVision synthesizes principles from productivity giants including:
 
 ## 💻 Technology
 
-EndVision is built with React Native, providing a smooth, native experience across both iOS and Android platforms. The backend leverages AI technology to transform goal descriptions into structured action plans that incorporate proven productivity methodologies.
+FocusVector is built with React Native, providing a smooth, native experience across both iOS and Android platforms. The backend leverages AI technology to transform goal descriptions into structured action plans that incorporate proven productivity methodologies.
 
 ## 🤝 Contributing
 
-We welcome feedback, feature requests, and bug reports to make EndVision even better. Please submit issues through our GitHub repository or contact us directly through the app's feedback mechanism.
+We welcome feedback, feature requests, and bug reports to make FocusVector even better. Please submit issues through our GitHub repository or contact us directly through the app's feedback mechanism.
 
 ## 📄 License
 
-EndVision is proprietary software. All rights reserved.
+FocusVector is proprietary software. All rights reserved.
 
 ---
 
-© 2025 EndVision. All rights reserved.
+© 2025 FocusVector. All rights reserved.
 
 *Transform your vision into reality.*
