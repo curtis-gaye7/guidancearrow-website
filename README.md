@@ -2,7 +2,7 @@
 
 [Visit the FocusVector AI website](https://curtis-gaye7.github.io/focusvector-ai-website/index.html)
 
-[Support and FAQ](https://curtis-gaye7.github.io/focusvector-ai-website/support.html)
+[Support and FAQ](https://curtis-gaye7.github.io/focusvector-website/support.html)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android-lightgrey.svg)
