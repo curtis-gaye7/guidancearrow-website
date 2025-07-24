@@ -1,8 +1,8 @@
-# FocusVector
+# GuidanceArrow
 
-[Visit the FocusVector AI website](https://curtis-gaye7.github.io/focusvector-website/index.html)
+[Visit the GuidanceArrow AI website](https://curtis-gaye7.github.io/guidancearrow-website/index.html)
 
-[Support and FAQ](https://curtis-gaye7.github.io/focusvector-website/support.html)
+[Support and FAQ](https://curtis-gaye7.github.io/guidancearrow-website/support.html)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android-lightgrey.svg)
@@ -13,9 +13,9 @@
 
 ## Overview
 
-FocusVector is a comprehensive productivity application that leverages artificial intelligence to transform abstract goals into structured, actionable pathways. By combining intelligent goal breakdown, habit formation principles, time tracking, and detailed analytics, FocusVector creates a complete ecosystem for personal and professional achievement.
+GuidanceArrow is a comprehensive productivity application that leverages artificial intelligence to transform abstract goals into structured, actionable pathways. By combining intelligent goal breakdown, habit formation principles, time tracking, and detailed analytics, GuidanceArrow creates a complete ecosystem for personal and professional achievement.
 
-Whether you're pursuing career advancement, launching a project, developing a skill, or implementing personal improvements, FocusVector provides the structure, insights, and tools to make consistent progress toward your vision.
+Whether you're pursuing career advancement, launching a project, developing a skill, or implementing personal improvements, GuidanceArrow provides the structure, insights, and tools to make consistent progress toward your vision.
 
 ## ✨ Key Features
 
@@ -75,14 +75,14 @@ Design your ideal day and access time-specific tasks with a single tap.
 
 ## 🛠️ Installation
 
-FocusVector is available for download on iOS and Android platforms:
+GuidanceArrow is available for download on iOS and Android platforms:
 
 - [App Store](#) *(Coming Soon)*
 - [Google Play](#) *(Coming Soon)*
 
 ## 📚 Inspired by Productivity Classics
 
-FocusVector synthesizes principles from productivity giants including:
+GuidanceArrow synthesizes principles from productivity giants including:
 
 - **Getting Things Done** - For task management and mental clarity
 - **Atomic Habits** - For incremental improvement and habit building
@@ -94,7 +94,7 @@ FocusVector synthesizes principles from productivity giants including:
 
 ## 💻 Technology
 
-FocusVector is built with React Native, providing a smooth, native experience across both iOS and Android platforms. The backend leverages AI technology to transform goal descriptions into structured action plans that incorporate proven productivity methodologies.
+GuidanceArrow is built with React Native, providing a smooth, native experience across both iOS and Android platforms. The backend leverages AI technology to transform goal descriptions into structured action plans that incorporate proven productivity methodologies.
 
 ## 🤝 Contributing
 
